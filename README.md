@@ -175,6 +175,8 @@ También resultó relevante definir explícitamente qué puede hacer el agente d
 
 ## Estructura del repositorio
 
+## Estructura del repositorio
+
 ```text
 .
 ├── README.md
@@ -187,23 +189,34 @@ También resultó relevante definir explícitamente qué puede hacer el agente d
 │   ├── system_prompt_V2.md
 │   ├── system_prompt_V3.md
 │   └── user_prompt.md
-└── corridas/
-    ├── corrida_1/
-    │   ├── entrada.md
-    │   └── salida.md
-    ├── corrida_2/
-    │   ├── entrada.md
-    │   └── salida.md
-    └── corrida_3/
-        ├── entrada.md
-        └── salida.md
-Confidencialidad y datos
+├── corridas/
+│   ├── corrida_1/
+│   │   ├── entrada_corrida_1.md
+│   │   └── salida_corrida_1.md
+│   ├── corrida_2/
+│   │   ├── entrada_corrida_2.md
+│   │   └── salida_corrida_2.md
+│   └── corrida_3/
+│       ├── entrada_corrida_3.md
+│       └── salida_corrida_3.md
+└── datos/
+    └── Archivo_accidentes_anonimizado.xlsx
+```
+
+## Confidencialidad y datos
+
 Las corridas se realizaron con datos reales de trabajo.
+
 La base original utilizada para las pruebas no se publica en este repositorio porque contiene información confidencial.
+
 Las salidas permitieron detectar este riesgo durante el propio desarrollo del agente y dieron origen a las iteraciones V2 y V3.
+
 La versión final del contrato establece reglas explícitas de anonimización para impedir que nombres de personas, empresas u operaciones sean expuestos en las salidas.
-Autor
+
+## Autor
+
 Tomás García Martínez
-MBA UCEMA
-Programación de y con Agentes de IA
+
+MBA UCEMA  
+Programación de y con Agentes de IA  
 2026
